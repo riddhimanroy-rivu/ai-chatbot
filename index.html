@@ -1,0 +1,59 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <div class="chat-header">
+            <div class="bot-icon">🤖</div>
+            <div>
+                <h1>AI Assistant</h1>
+                <p><span class="online-dot"></span> Online</p>
+            </div>
+            <button id="clearBtn">Clear</button>
+        </div>
+
+        <div class="chat-box" id="chatBox">
+            <div class="message bot-message">
+                <div class="avatar">🤖</div>
+                <div class="message-content">
+                    <p>Hello! 👋</p>
+                    <p>I'm your AI Assistant. Ask me something!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="typing" id="typing">
+            AI is typing...
+        </div>
+
+        <div class="suggestions">
+            <button onclick="quickMessage('Hello')">👋 Hello</button>
+            <button onclick="quickMessage('What can you do?')">❓ What can you do?</button>
+            <button onclick="quickMessage('Tell me a joke')">😂 Tell me a joke</button>
+        </div>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
+            <button id="sendBtn">➤</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
